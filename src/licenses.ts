@@ -163,7 +163,6 @@ export const licenses: License[] = [
       ja: ['免責', '無保証'],
     },
   },
-  // 追加ライセンス
   {
     name: 'Eclipse Public License 2.0',
     description: {
