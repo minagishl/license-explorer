@@ -310,6 +310,25 @@ export const licenses: License[] = [
       ja: ['無保証', '無責任'],
     },
   },
+  {
+    name: 'WTFPL',
+    description: {
+      en: 'Do What The F*ck You Want To Public License. This license allows you to do anything with the software, with no restrictions whatsoever.',
+      ja: 'あなたが望むことをするパブリックライセンス。このライセンスは、ソフトウェアに対して何でも行うことを許可し、一切の制限はありません。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['None'],
+      ja: ['なし'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
 ];
 
 export const licenseAliases: LicenseAlias[] = [
@@ -380,5 +399,9 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'Common Development and Distribution License',
     aliases: ['CDDL', 'cddl'],
+  },
+  {
+    name: 'WTFPL',
+    aliases: ['WTFPL', 'wtfpl'],
   },
 ];
