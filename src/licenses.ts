@@ -115,25 +115,6 @@ export const licenses: License[] = [
     },
   },
   {
-    name: 'GNU General Public License v3.0',
-    description: {
-      en: 'A copyleft license that requires anyone who distributes your code or a derivative work to make the source available under the same terms.',
-      ja: 'コードまたはその派生物を配布する際に、同じ条件でソースコードを公開することを要求するコピーレフトライセンスです。',
-    },
-    permissions: {
-      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
-      ja: ['商用利用', '改変', '配布', '私的利用'],
-    },
-    conditions: {
-      en: ['Disclosure of source', 'License and copyright notice'],
-      ja: ['ソースコードの公開', 'ライセンスと著作権表示'],
-    },
-    limitations: {
-      en: ['No liability', 'No warranty'],
-      ja: ['免責', '無保証'],
-    },
-  },
-  {
     name: 'BSD 3-Clause License',
     description: {
       en: 'A permissive license with a clause that prohibits the use of the names of the project contributors to endorse or promote products derived from the software without prior permission.',
@@ -443,6 +424,44 @@ export const licenses: License[] = [
     },
   },
   {
+    name: 'GNU General Public License, version 2',
+    description: {
+      en: 'The second version of the GNU GPL license, aimed at guaranteeing your freedom to share and change free software.',
+      ja: 'GNU GPLライセンスの第2版で、フリーソフトウェアを共有および変更する自由を保証することを目的としています。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclose source', 'License and copyright notice', 'State changes'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'GNU General Public License, version 3',
+    description: {
+      en: 'A copyleft license that requires anyone who distributes your code or a derivative work to make the source available under the same terms.',
+      ja: 'コードまたはその派生物を配布する際に、同じ条件でソースコードを公開することを要求するコピーレフトライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclosure of source', 'License and copyright notice'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
     name: 'CMU License',
     description: {
       en: 'A license created by Carnegie Mellon University, similar to the MIT license but with specific attribution requirements.',
@@ -588,7 +607,15 @@ export const licenseAliases: LicenseAlias[] = [
     ],
   },
   {
-    name: 'GNU General Public License v3.0',
+    name: 'GNU General Public License, version 1',
+    aliases: ['GPL-1.0', 'GPL1', 'GPLv1', 'GNU GPL v1', 'GPL 1.0'],
+  },
+  {
+    name: 'GNU General Public License, version 2',
+    aliases: ['GPL-2.0', 'GPL2', 'GPLv2', 'GNU GPL v2', 'GPL 2.0'],
+  },
+  {
+    name: 'GNU General Public License, version 3',
     aliases: ['GPL', 'GPL3', 'GPLv3', 'GNU GPL', 'GNU GPLv3', 'GPL 3.0'],
   },
   {
@@ -646,10 +673,6 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'SIL Open Font License 1.1',
     aliases: ['OFL', 'SIL OFL'],
-  },
-  {
-    name: 'GNU General Public License, version 1',
-    aliases: ['GPL-1.0', 'GPL1', 'GPLv1', 'GNU GPL v1', 'GPL 1.0'],
   },
   {
     name: 'CMU License',
