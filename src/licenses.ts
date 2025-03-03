@@ -329,6 +329,31 @@ export const licenses: License[] = [
       ja: ['免責', '無保証'],
     },
   },
+  {
+    name: 'SIL Open Font License 1.1',
+    description: {
+      en: 'A free, open source license designed for fonts. It allows fonts to be freely used, studied, modified and redistributed as long as they are not sold by themselves.',
+      ja: 'フォント用に設計された、無料のオープンソースライセンスです。フォント自体が販売されない限り、フォントを自由に使用、研究、修正、再配布できます。',
+    },
+    permissions: {
+      en: [
+        'Commercial use',
+        'Modification',
+        'Distribution',
+        'Private use',
+        'Embedding',
+      ],
+      ja: ['商用利用', '改変', '配布', '私的利用', '埋め込み'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'Reserved Font Name'],
+      ja: ['ライセンスと著作権表示', '予約済みフォント名'],
+    },
+    limitations: {
+      en: ['No warranty'],
+      ja: ['無保証'],
+    },
+  },
 ];
 
 export const licenseAliases: LicenseAlias[] = [
@@ -403,5 +428,9 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'WTFPL',
     aliases: ['WTFPL', 'wtfpl'],
+  },
+  {
+    name: 'SIL Open Font License 1.1',
+    aliases: ['OFL', 'SIL OFL'],
   },
 ];
