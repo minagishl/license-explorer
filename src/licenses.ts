@@ -272,6 +272,25 @@ export const licenses: License[] = [
       ja: ['免責', '無保証'],
     },
   },
+  {
+    name: 'ISC License',
+    description: {
+      en: 'A permissive license that is functionally similar to the BSD or MIT licenses, but simplified by removing language that is no longer necessary under the Berne Convention.',
+      ja: 'BSDまたはMITライセンスと機能的に類似していますが、ベルヌ条約の下で不要になった文言を削除して簡略化された寛容なライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
 ];
 
 export const licenseAliases: LicenseAlias[] = [
@@ -334,5 +353,9 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'Boost Software License 1.0',
     aliases: ['BSL', 'Boost', 'BSL 1.0', 'Boost 1.0'],
+  },
+  {
+    name: 'ISC License',
+    aliases: ['ISC', 'isc'],
   },
 ];
