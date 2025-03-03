@@ -2,6 +2,75 @@ import { License, LicenseAlias } from './types';
 
 export const licenses: License[] = [
   {
+    name: 'BSD 1-Clause License',
+    description: {
+      en: 'A simplified BSD license that requires only preservation of copyright notices for redistribution.',
+      ja: '再配布時に著作権表示の保持のみを要求する簡略化されたBSDライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Microsoft Public License',
+    description: {
+      en: 'A permissive open source license created by Microsoft that allows for the distribution and modification of the software.',
+      ja: 'Microsoftが作成した寛容なオープンソースライセンスで、ソフトウェアの配布と改変を許可します。',
+    },
+    permissions: {
+      en: [
+        'Commercial use',
+        'Modification',
+        'Distribution',
+        'Private use',
+        'Patent use',
+      ],
+      ja: ['商用利用', '改変', '配布', '私的利用', '特許使用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty', 'No trademark use'],
+      ja: ['免責', '無保証', '商標使用不可'],
+    },
+  },
+  {
+    name: 'Microsoft Reciprocal License',
+    description: {
+      en: 'A license created by Microsoft that requires source code of modifications to be shared when distributed.',
+      ja: 'Microsoftが作成したライセンスで、配布時に改変されたソースコードの共有を要求します。',
+    },
+    permissions: {
+      en: [
+        'Commercial use',
+        'Modification',
+        'Distribution',
+        'Private use',
+        'Patent use',
+      ],
+      ja: ['商用利用', '改変', '配布', '私的利用', '特許使用'],
+    },
+    conditions: {
+      en: ['Disclose source', 'License and copyright notice', 'Same license'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示', '同一ライセンス'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty', 'No trademark use'],
+      ja: ['免責', '無保証', '商標使用不可'],
+    },
+  },
+  {
     name: 'MIT License',
     description: {
       en: 'A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.',
@@ -357,6 +426,18 @@ export const licenses: License[] = [
 ];
 
 export const licenseAliases: LicenseAlias[] = [
+  {
+    name: 'BSD 1-Clause License',
+    aliases: ['BSD-1', 'BSD 1', 'BSD1', 'BSD 1-Clause', 'BSD-1-Clause'],
+  },
+  {
+    name: 'Microsoft Public License',
+    aliases: ['MS-PL', 'MSPL', 'Microsoft PL'],
+  },
+  {
+    name: 'Microsoft Reciprocal License',
+    aliases: ['MS-RL', 'MSRL', 'Microsoft RL'],
+  },
   {
     name: 'MIT License',
     aliases: ['MIT', 'mit', 'MIT license', 'mit license'],
