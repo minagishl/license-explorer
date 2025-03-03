@@ -291,6 +291,25 @@ export const licenses: License[] = [
       ja: ['免責', '無保証'],
     },
   },
+  {
+    name: 'Common Development and Distribution License',
+    description: {
+      en: 'A license used by Sun Microsystems (now Oracle) for many of its open source projects. It is a weak copyleft license.',
+      ja: 'Sun Microsystems（現Oracle）が多くのオープンソースプロジェクトで使用していたライセンスです。弱いコピーレフトライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Source code availability'],
+      ja: ['ソースコードの可用性'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['無保証', '無責任'],
+    },
+  },
 ];
 
 export const licenseAliases: LicenseAlias[] = [
@@ -357,5 +376,9 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'ISC License',
     aliases: ['ISC', 'isc'],
+  },
+  {
+    name: 'Common Development and Distribution License',
+    aliases: ['CDDL', 'cddl'],
   },
 ];
