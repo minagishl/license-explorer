@@ -1,4 +1,4 @@
-import { License } from './types';
+import { License, LicenseAlias } from './types';
 
 export const licenses: License[] = [
   {
@@ -272,5 +272,68 @@ export const licenses: License[] = [
       en: ['No liability', 'No warranty'],
       ja: ['免責', '無保証'],
     },
+  },
+];
+
+export const licenseAliases: LicenseAlias[] = [
+  {
+    name: 'MIT License',
+    aliases: ['MIT', 'mit', 'MIT license', 'mit license'],
+  },
+  {
+    name: 'Apache License 2.0',
+    aliases: [
+      'Apache',
+      'apache',
+      'Apache 2.0',
+      'apache2',
+      'Apache2',
+      'APL 2.0',
+      'APL2',
+    ],
+  },
+  {
+    name: 'GNU General Public License v3.0',
+    aliases: ['GPL', 'GPL3', 'GPLv3', 'GNU GPL', 'GNU GPLv3', 'GPL 3.0'],
+  },
+  {
+    name: 'BSD 3-Clause License',
+    aliases: ['BSD-3', 'BSD 3', 'BSD3', 'BSD 3-Clause', 'BSD-3-Clause'],
+  },
+  {
+    name: 'BSD 2-Clause License',
+    aliases: ['BSD-2', 'BSD 2', 'BSD2', 'BSD 2-Clause', 'BSD-2-Clause'],
+  },
+  {
+    name: 'Mozilla Public License 2.0',
+    aliases: ['MPL', 'MPL2', 'MPL 2.0', 'Mozilla', 'Mozilla 2.0'],
+  },
+  {
+    name: 'GNU Lesser General Public License v3.0',
+    aliases: ['LGPL', 'LGPL3', 'LGPLv3', 'GNU LGPL', 'GNU LGPLv3', 'LGPL 3.0'],
+  },
+  {
+    name: 'GNU Affero General Public License v3.0',
+    aliases: ['AGPL', 'AGPL3', 'AGPLv3', 'GNU AGPL', 'GNU AGPLv3', 'AGPL 3.0'],
+  },
+  {
+    name: 'Eclipse Public License 2.0',
+    aliases: ['EPL', 'EPL2', 'EPL 2.0', 'Eclipse', 'Eclipse 2.0'],
+  },
+  {
+    name: 'Unlicense',
+    aliases: ['The Unlicense', 'UNLICENSE', 'unlicense'],
+  },
+  {
+    name: 'Zlib License',
+    aliases: ['zlib', 'ZLIB', 'Zlib'],
+  },
+  {
+    name: 'CC0 1.0 Universal',
+    aliases: ['CC0', 'cc0', 'CC0 1.0', 'Creative Commons Zero'],
+  },
+  {
+    name: 'Boost Software License 1.0',
+    aliases: ['BSL', 'Boost', 'BSL 1.0', 'Boost 1.0'],
   },
 ];

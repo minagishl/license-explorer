@@ -1,5 +1,10 @@
 export type Language = 'en' | 'ja';
 
+export interface LicenseAlias {
+  name: string; // オリジナルのライセンス名
+  aliases: string[]; // 略語や類似文字の配列
+}
+
 export interface License {
   name: string;
   description: {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
-import { licenses } from './licenses';
-import { Language } from './types';
+import { licenses, licenseAliases } from './licenses';
+import { Language, LicenseAlias } from './types';
 
 export function App() {
   const [lang, setLang] = useState<Language>('en');
@@ -21,20 +21,33 @@ export function App() {
 
   const handleSearch = (term: string) => {
     setSearchTerm(term);
-    const filtered = licenses.filter(
-      (license) =>
-        license.name.toLowerCase().includes(term.toLowerCase()) ||
-        license.description[lang].toLowerCase().includes(term.toLowerCase()) ||
+    const lowercaseTerm = term.toLowerCase();
+
+    const filtered = licenses.filter((license) => {
+      // Search by license name and aliases
+      const aliasMatch = licenseAliases.find(
+        (alias: LicenseAlias) =>
+          alias.name === license.name &&
+          alias.aliases.some((a: string) =>
+            a.toLowerCase().includes(lowercaseTerm)
+          )
+      );
+
+      const normalMatch =
+        license.name.toLowerCase().includes(lowercaseTerm) ||
+        license.description[lang].toLowerCase().includes(lowercaseTerm) ||
         license.permissions[lang].some((p) =>
-          p.toLowerCase().includes(term.toLowerCase())
+          p.toLowerCase().includes(lowercaseTerm)
         ) ||
         license.conditions[lang].some((c) =>
-          c.toLowerCase().includes(term.toLowerCase())
+          c.toLowerCase().includes(lowercaseTerm)
         ) ||
         license.limitations[lang].some((l) =>
-          l.toLowerCase().includes(term.toLowerCase())
-        )
-    );
+          l.toLowerCase().includes(lowercaseTerm)
+        );
+
+      return aliasMatch || normalMatch;
+    });
     setFilteredLicenses(filtered);
   };
 
