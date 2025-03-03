@@ -1,0 +1,276 @@
+import { License } from './types';
+
+export const licenses: License[] = [
+  {
+    name: 'MIT License',
+    description: {
+      en: 'A permissive license that is short and to the point. It lets people do anything with your code with proper attribution and without warranty.',
+      ja: '短く簡潔な寛容なライセンスです。適切な帰属表示と無保証の下で、あなたのコードを自由に使用することができます。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Apache License 2.0',
+    description: {
+      en: 'A permissive license that also provides an express grant of patent rights from contributors to users.',
+      ja: '寛容なライセンスで、貢献者からユーザーへの特許権の明示的な付与も含まれています。',
+    },
+    permissions: {
+      en: [
+        'Commercial use',
+        'Modification',
+        'Distribution',
+        'Patent use',
+        'Private use',
+      ],
+      ja: ['商用利用', '改変', '配布', '特許使用', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'State changes'],
+      ja: ['ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty', 'No trademark use'],
+      ja: ['免責', '無保証', '商標使用不可'],
+    },
+  },
+  {
+    name: 'GNU General Public License v3.0',
+    description: {
+      en: 'A copyleft license that requires anyone who distributes your code or a derivative work to make the source available under the same terms.',
+      ja: 'コードまたはその派生物を配布する際に、同じ条件でソースコードを公開することを要求するコピーレフトライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclosure of source', 'License and copyright notice'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'BSD 3-Clause License',
+    description: {
+      en: 'A permissive license with a clause that prohibits the use of the names of the project contributors to endorse or promote products derived from the software without prior permission.',
+      ja: '事前の許可なしに、ソフトウェアから派生した製品を推奨または宣伝するためにプロジェクト貢献者の名前を使用することを禁じる条項を含む寛容なライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'No endorsement clause'],
+      ja: ['ライセンスと著作権表示', '承認禁止条項'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'BSD 2-Clause License',
+    description: {
+      en: 'A simplified BSD license that allows for redistribution and use with minimal restrictions.',
+      ja: '再配布と利用を最小限の制限で許可する簡略化されたBSDライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Mozilla Public License 2.0',
+    description: {
+      en: 'A weak copyleft license that allows the covered source code to be mixed with other licenses.',
+      ja: 'カバーされたソースコードを他のライセンスと混在させることを許容する弱いコピーレフトライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclose source', 'License and copyright notice'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'GNU Lesser General Public License v3.0',
+    description: {
+      en: 'A license that allows developers to use and integrate open source software into their own projects without the obligation to release their own source code under the same terms.',
+      ja: '開発者が自社のプロジェクトにオープンソースソフトウェアを統合できるようにするライセンスで、自身のソースコードを同じ条件で公開する義務はありません。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: [
+        'License and copyright notice',
+        'State changes',
+        'Disclose source for modifications',
+      ],
+      ja: ['ライセンスと著作権表示', '変更の記載', '改変時のソース公開'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'GNU Affero General Public License v3.0',
+    description: {
+      en: 'A copyleft license that requires modified versions of the software to be made available to users over a network.',
+      ja: '改変されたソフトウェアをネットワーク経由で利用するユーザーに対して、ソースコードの公開を要求するコピーレフトライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclose source', 'License and copyright notice'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  // 追加ライセンス
+  {
+    name: 'Eclipse Public License 2.0',
+    description: {
+      en: 'A weak copyleft license used by the Eclipse Foundation, allowing the distribution of modifications and combined works under certain conditions.',
+      ja: 'Eclipse Foundationが採用する弱いコピーレフトライセンスで、一定の条件の下で改変および結合作品の配布を許可します。',
+    },
+    permissions: {
+      en: [
+        'Commercial use',
+        'Modification',
+        'Distribution',
+        'Patent use',
+        'Private use',
+      ],
+      ja: ['商用利用', '改変', '配布', '特許使用', '私的利用'],
+    },
+    conditions: {
+      en: [
+        'License and copyright notice',
+        'State changes',
+        'Open source of modified files',
+      ],
+      ja: [
+        'ライセンスと著作権表示',
+        '変更の記載',
+        '改変ファイルのオープンソース',
+      ],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Unlicense',
+    description: {
+      en: 'A license dedicated to releasing works into the public domain, relinquishing all copyright claims.',
+      ja: '作品をパブリックドメインに置き、すべての著作権を放棄するためのライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['None'],
+      ja: ['なし'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Zlib License',
+    description: {
+      en: 'A simple and permissive license ideal for small libraries, with minimal restrictions on usage.',
+      ja: '小規模なライブラリに最適な、使用にほとんど制限のないシンプルで寛容なライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'CC0 1.0 Universal',
+    description: {
+      en: 'A public domain dedication that allows creators to waive all rights and place works in the public domain.',
+      ja: 'クリエーターがすべての権利を放棄し、作品をパブリックドメインに置くことを許可するパブリックドメイン宣言です。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['None'],
+      ja: ['なし'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Boost Software License 1.0',
+    description: {
+      en: 'A very permissive license with minimal restrictions that allows the use, reproduction, and distribution of software, provided the license text is included.',
+      ja: '非常に寛容なライセンスで、ライセンス文書が含まれていることを条件に、ソフトウェアの使用、複製、配布を許可します。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Include license text'],
+      ja: ['ライセンス文書の同梱'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+];
