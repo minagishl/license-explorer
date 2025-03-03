@@ -423,6 +423,139 @@ export const licenses: License[] = [
       ja: ['無保証'],
     },
   },
+  {
+    name: 'GNU General Public License, version 1',
+    description: {
+      en: 'The original version of the GNU GPL license, aimed at guaranteeing your freedom to share and change free software.',
+      ja: 'GNU GPLライセンスの最初のバージョンで、フリーソフトウェアを共有および変更する自由を保証することを目的としています。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['Disclose source', 'License and copyright notice', 'State changes'],
+      ja: ['ソースコードの公開', 'ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'CMU License',
+    description: {
+      en: 'A license created by Carnegie Mellon University, similar to the MIT license but with specific attribution requirements.',
+      ja: 'カーネギーメロン大学によって作成されたライセンスで、MITライセンスに似ていますが、特定の帰属要件があります。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'State changes'],
+      ja: ['ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'ICU License',
+    description: {
+      en: 'A permissive free software license used by the International Components for Unicode (ICU) library.',
+      ja: 'Unicode (ICU) ライブラリの国際コンポーネントで使用されている寛容なフリーソフトウェアライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Jabber Open Source License',
+    description: {
+      en: 'A license created for the Jabber instant messaging protocol that was later superseded by other licenses.',
+      ja: 'Jabberインスタントメッセージングプロトコル用に作成されたライセンスで、後に他のライセンスに置き換えられました。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'State changes'],
+      ja: ['ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'Los Alamos National Labs BSD-3 Variant',
+    description: {
+      en: 'A variant of the BSD 3-Clause License specifically customized for software developed at Los Alamos National Laboratory.',
+      ja: 'ロスアラモス国立研究所で開発されたソフトウェア向けにカスタマイズされたBSD 3条項ライセンスの変種です。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'No endorsement clause'],
+      ja: ['ライセンスと著作権表示', '承認禁止条項'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'The OCLC Research Public License 2.0 License',
+    description: {
+      en: 'A license created by Online Computer Library Center (OCLC) for research software and projects.',
+      ja: 'オンラインコンピュータライブラリセンター（OCLC）が研究ソフトウェアとプロジェクト向けに作成したライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice', 'State changes'],
+      ja: ['ライセンスと著作権表示', '変更の記載'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
+  {
+    name: 'UNICODE LICENSE V3',
+    description: {
+      en: 'A license developed by the Unicode Consortium for the use and distribution of data files and software related to Unicode.',
+      ja: 'Unicode関連のデータファイルとソフトウェアの使用と配布のためにUnicode Consortiumによって開発されたライセンスです。',
+    },
+    permissions: {
+      en: ['Commercial use', 'Modification', 'Distribution', 'Private use'],
+      ja: ['商用利用', '改変', '配布', '私的利用'],
+    },
+    conditions: {
+      en: ['License and copyright notice'],
+      ja: ['ライセンスと著作権表示'],
+    },
+    limitations: {
+      en: ['No liability', 'No warranty'],
+      ja: ['免責', '無保証'],
+    },
+  },
 ];
 
 export const licenseAliases: LicenseAlias[] = [
@@ -513,5 +646,33 @@ export const licenseAliases: LicenseAlias[] = [
   {
     name: 'SIL Open Font License 1.1',
     aliases: ['OFL', 'SIL OFL'],
+  },
+  {
+    name: 'GNU General Public License, version 1',
+    aliases: ['GPL-1.0', 'GPL1', 'GPLv1', 'GNU GPL v1', 'GPL 1.0'],
+  },
+  {
+    name: 'CMU License',
+    aliases: ['MIT-CMU', 'CMU MIT'],
+  },
+  {
+    name: 'ICU License',
+    aliases: ['ICU', 'ICU License'],
+  },
+  {
+    name: 'Jabber Open Source License',
+    aliases: ['JOSL', 'Jabber License'],
+  },
+  {
+    name: 'Los Alamos National Labs BSD-3 Variant',
+    aliases: ['LANL-BSD', 'LANL BSD', 'Los Alamos BSD'],
+  },
+  {
+    name: 'The OCLC Research Public License 2.0 License',
+    aliases: ['OCLC-2.0', 'OCLC 2.0', 'OCLC Research License'],
+  },
+  {
+    name: 'UNICODE LICENSE V3',
+    aliases: ['Unicode-3.0', 'Unicode License 3.0', 'Unicode-TOU'],
   },
 ];
